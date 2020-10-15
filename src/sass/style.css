@@ -1,3 +1,7 @@
+.main__title {
+  font-family: "Poppins", "Verdana", sans-serif;
+}
+
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -426,6 +430,60 @@ html {
   overflow: hidden;
 }
 
+.ico {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ico-skype {
+  width: 48.23px;
+  height: 48.23px;
+  bottom: 165%;
+  left: 44%;
+  background-image: url("../img/icons/skype.svg");
+}
+
+.ico-letter {
+  width: 46px;
+  height: 36px;
+  top: 165%;
+  left: 44%;
+  background-image: url("../img/icons/letter.svg");
+}
+
+.ico-telephone {
+  width: 38px;
+  height: 38px;
+  bottom: 101%;
+  left: 118%;
+  background-image: url("../img/icons/telephone.svg");
+}
+
+.ico-viber {
+  width: 45px;
+  height: 45px;
+  top: 101%;
+  right: 118%;
+  background-image: url("../img/icons/viber.svg");
+}
+
+.ico-cactus {
+  width: 58.57px;
+  height: 69px;
+  top: 98%;
+  left: 118%;
+  background-image: url("../img/icons/cactus.svg");
+}
+
+.ico-telegram {
+  width: 58px;
+  height: 49px;
+  bottom: 101%;
+  right: 118%;
+  background-image: url("../img/icons/telegram.svg");
+}
+
 .kebab-menu__circle {
   width: 12px;
   height: 12px;
@@ -441,6 +499,51 @@ html {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/backgrounds/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.header {
+  position: absolute;
+  width: 422.5px;
+  height: 145px;
+  left: 0px;
+  top: 0px;
+  background-image: url("../img/backgrounds/header-bg.png");
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  padding: 422px 0;
+}
+
+.main__wrapper {
+  display: flex;
+}
+
+.main__title {
+  margin: 0 175px 0 0;
+  padding: 72px 0;
+  color: #fff;
+  font-size: 6.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 9.6rem;
+}
+
+.main__info {
+  position: relative;
+  display: flex;
+}
+
+.main__logo {
+  width: 337px;
+  height: 236px;
+  background-image: url("../img/logo-primary.svg");
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

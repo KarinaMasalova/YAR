@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    padding: 422px 0;
+}
+
+.main__wrapper {
+    display: flex;
+}
+
+.main__title {
+    margin: 0 175px 0 0;
+    padding: 72px 0;
+    color: $color-light;
+    @extend %font;
+    @include font($size: 6.4rem, $weight: 400, $height: 9.6rem);
+}
+
+.main__info {
+    position: relative;
+    display: flex;
+}
+
+.main__logo {
+    width: 337px;
+    height: 236px;
+    background-image: url('../img/logo-primary.svg');
+}
