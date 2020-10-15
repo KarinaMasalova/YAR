@@ -2,6 +2,12 @@
     position: absolute;
     cursor: pointer;
     display: inline-block;
+    background-repeat: no-repeat;
+    &:hover {
+        @extend %transition;
+        transform: scale(1.4);
+        filter: drop-shadow(6px 6px 6px #FFB500);
+    }
 }
 
 .ico-skype {

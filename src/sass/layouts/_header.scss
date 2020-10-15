@@ -1,4 +1,5 @@
 .header {
+    display: flex;
     position: absolute;
     width: 422.5px;
     height: 145px;
@@ -6,4 +7,17 @@
     top: 0px;
     background-image: url('../img/backgrounds/header-bg.png');
     background-repeat: no-repeat;
+}
+
+.header__logo {
+    display: inline-block;
+    width: 84px;
+    height: 59px;
+    margin: 18px 62px 68px 17px;
+    background-image: url('../img/logo-header.svg');
+    background-repeat: no-repeat;
+    @extend %transition;
+    &:hover {
+        filter: drop-shadow(6px 6px 6px #fff);
+    }
 }
