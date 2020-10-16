@@ -5,3 +5,19 @@
 %transition {
     transition: all .3s ease-out;
 }
+
+%menu-icon {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-position: center;
+    background-color: $color-additional;
+    filter: drop-shadow(6px 6px 6px lightgray);
+}
+
+%menu-icon-hovered {
+    &:hover {
+        @extend %transition;
+        transform: scale(1.4);
+        filter: drop-shadow(6px 6px 6px $color-additional);
+    }
+}

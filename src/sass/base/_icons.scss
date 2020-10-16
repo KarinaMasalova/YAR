@@ -3,11 +3,6 @@
     cursor: pointer;
     display: inline-block;
     background-repeat: no-repeat;
-    &:hover {
-        @extend %transition;
-        transform: scale(1.4);
-        filter: drop-shadow(6px 6px 6px #FFB500);
-    }
 }
 
 .ico-skype {
@@ -16,6 +11,12 @@
     bottom: 165%;
     left: 44%;
     background-image: url('../img/icons/skype.svg');
+    &_colored {
+        bottom: -86%;
+        left: 25%;
+        @extend %menu-icon;
+        @extend %menu-icon-hovered;
+    }
 }
 
 .ico-letter {
@@ -24,6 +25,12 @@
     top: 165%;
     left: 44%;
     background-image: url('../img/icons/letter.svg');
+    &_colored {
+        top: 10%;
+        left: 104%;
+        @extend %menu-icon;
+        @extend %menu-icon-hovered;
+    }
 }
 
 .ico-telephone {
@@ -32,6 +39,12 @@
     bottom: 101%;
     left: 118%;
     background-image: url('../img/icons/telephone.svg');
+    &_colored {
+        bottom: -22%;
+        left: 96%;
+        @extend %menu-icon;
+        @extend %menu-icon-hovered;
+    }
 }
 
 .ico-viber {
@@ -40,6 +53,12 @@
     top: 101%;
     right: 118%;
     background-image: url('../img/icons/viber.svg');
+    &_colored {
+        top: 144%;
+        right: 32%;
+        @extend %menu-icon;
+        @extend %menu-icon-hovered;
+    }
 }
 
 .ico-cactus {
@@ -48,6 +67,12 @@
     top: 98%;
     left: 118%;
     background-image: url('../img/icons/cactus.svg');
+    &_colored {
+        left: 4%;
+        top: 97%;
+        @extend %menu-icon;
+        @extend %menu-icon-hovered;
+    }
 }
 
 .ico-telegram {
@@ -56,4 +81,10 @@
     bottom: 101%;
     right: 118%;
     background-image: url('../img/icons/telegram.svg');
+    &_colored {
+        bottom: -70%;
+        right: 7%;   
+        @extend %menu-icon;
+        @extend %menu-icon-hovered;
+    }
 }

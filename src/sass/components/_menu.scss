@@ -1,0 +1,19 @@
+.menu {
+    width: 150px;
+    height: 150px;
+    &_active {
+        .common {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.common {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 70px;
+    height: 70px;
+    @extend %transition;
+}
