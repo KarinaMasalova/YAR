@@ -11,7 +11,7 @@
   border-radius: 50%;
   background-position: center;
   background-color: #FFB500;
-  filter: drop-shadow(6px 6px 6px lightgray);
+  filter: drop-shadow(6px 6px 6px #D3D3D3);
 }
 
 .ico-telegram_colored:hover, .ico-cactus_colored:hover, .ico-viber_colored:hover, .ico-telephone_colored:hover, .ico-letter_colored:hover, .ico-skype_colored:hover {
@@ -453,6 +453,21 @@ html {
   cursor: pointer;
   display: inline-block;
   background-repeat: no-repeat;
+}
+.ico_jump:hover {
+  filter: drop-shadow(6px 6px 6px #FFB500);
+  animation: jump 0.4s linear alternate infinite;
+}
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    transform: translate3d(0, 10%, 0);
+  }
+  100% {
+    transform: translate3d(0, 50%, 0);
+  }
 }
 
 .ico-skype {

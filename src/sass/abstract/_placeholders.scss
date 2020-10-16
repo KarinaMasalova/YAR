@@ -7,11 +7,11 @@
 }
 
 %menu-icon {
-    border: 2px solid #fff;
+    border: 2px solid $color-light;
     border-radius: 50%;
     background-position: center;
     background-color: $color-additional;
-    filter: drop-shadow(6px 6px 6px lightgray);
+    filter: drop-shadow(6px 6px 6px $color-shadow);
 }
 
 %menu-icon-hovered {
