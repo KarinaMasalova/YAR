@@ -1,4 +1,4 @@
-.main__title, .scroll-down__text {
+.main__title, .scroll-down__text, .button__text {
   font-family: "Poppins", "Verdana", sans-serif;
 }
 
@@ -562,6 +562,34 @@ html {
 .ico-telegram_colored {
   bottom: -70%;
   right: 7%;
+}
+
+.button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 175px;
+  height: 87.5px;
+  border-bottom-left-radius: 110px;
+  /* 100px of height + 10px of border */
+  border-bottom-right-radius: 110px;
+  /* 100px of height + 10px of border */
+  background-color: #83D024;
+}
+
+.button__text {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 3.6rem;
+}
+
+.about-us__button {
+  position: absolute;
+  top: 44%;
+  right: -2.3%;
+  transform: rotate(90deg);
 }
 
 .header__kebab-menu {

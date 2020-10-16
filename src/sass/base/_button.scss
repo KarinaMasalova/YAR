@@ -1,0 +1,23 @@
+.button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 175px;
+    height: 87.5px;
+    border-bottom-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
+    background-color: $color-primary;
+}
+
+.button__text {
+    color: $color-light;
+    @extend %font;
+    @include font($size: 2.4rem, $weight: 400, $height: 3.6rem);
+}
+
+.about-us__button {
+    position: absolute;
+    top: 44%;
+    right: -2.3%;
+    transform: rotate(90deg);
+}
