@@ -5,11 +5,6 @@
     background-repeat: no-repeat;
     &_jump {
         &:hover {
-            @keyframes jump {
-                0%   { transform: translate3d(0, 0, 0); }
-                40%  { transform: translate3d(0, 10%, 0); }
-                100% { transform: translate3d(0, 50%, 0); }
-            }
             filter: drop-shadow(6px 6px 6px $color-additional);
             animation: jump .4s linear alternate infinite;
         }

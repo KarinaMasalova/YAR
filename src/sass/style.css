@@ -1,4 +1,4 @@
-.main__title {
+.main__title, .scroll-down__text {
   font-family: "Poppins", "Verdana", sans-serif;
 }
 
@@ -19,6 +19,39 @@
   filter: drop-shadow(6px 6px 6px #FFB500);
 }
 
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    transform: translate3d(0, 10%, 0);
+  }
+  100% {
+    transform: translate3d(0, 50%, 0);
+  }
+}
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -458,17 +491,6 @@ html {
   filter: drop-shadow(6px 6px 6px #FFB500);
   animation: jump 0.4s linear alternate infinite;
 }
-@keyframes jump {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  40% {
-    transform: translate3d(0, 10%, 0);
-  }
-  100% {
-    transform: translate3d(0, 50%, 0);
-  }
-}
 
 .ico-skype {
   width: 48.23px;
@@ -599,6 +621,58 @@ html {
   height: 70px;
 }
 
+.scroll-down {
+  position: relative;
+}
+
+.scroll-down__arrow {
+  position: absolute;
+  top: -200%;
+  left: 35%;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+.scroll-down__arrow:first-child {
+  animation: move 3s ease-out 1s infinite;
+  top: -400%;
+}
+.scroll-down__arrow:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+  top: -300%;
+}
+.scroll-down__arrow::before, .scroll-down__arrow:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+.scroll-down__arrow:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+.scroll-down__arrow:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+.scroll-down__text {
+  display: block;
+  margin: 0;
+  color: #fff;
+  white-space: nowrap;
+  animation: pulse 2s linear alternate infinite;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 3rem;
+}
+
 .screen {
   height: 100vh;
   width: 100vw;
@@ -663,6 +737,11 @@ html {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

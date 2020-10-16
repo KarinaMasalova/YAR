@@ -1,0 +1,50 @@
+.scroll-down {
+    position: relative;
+}
+  
+.scroll-down__arrow {
+    position: absolute;
+    top: -200%;
+    left: 35%;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+    &:first-child {
+        animation: move 3s ease-out 1s infinite;
+        top: -400%;
+    }
+    &:nth-child(2) {
+        animation: move 3s ease-out 2s infinite;
+        top: -300%;
+    }
+    &::before,
+    &:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 51%;
+        background: $color-light;
+    }
+    &:before {
+        left: 0;
+        transform: skew(0deg, 30deg);
+    }
+    &:after {
+        right: 0;
+        width: 50%;
+        transform: skew(0deg, -30deg);
+    }
+}
+
+.scroll-down__text {
+    display: block;
+    margin: 0;
+    color: $color-light;
+    white-space: nowrap;
+    animation: pulse 2s linear alternate infinite;
+    @extend %font;
+    @include font($size: 2.0rem, $weight: 400, $height: 3.0rem);
+}
