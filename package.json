@@ -17,6 +17,7 @@
     "url": "https://github.com/KarinaMasalova/YAR/issues"
   },
   "dependencies": {
+    "fullpage.js": "^3.0.9",
     "normalize-scss": "^7.0.1"
   },
   "devDependencies": {

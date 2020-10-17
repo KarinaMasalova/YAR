@@ -6,10 +6,11 @@
         <title>YAR</title>
         <link rel="icon" href="./src/img/icons/cactus.svg">
         <link rel="stylesheet" href="./src/sass/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
     </head>
-    <body>
-        <div class="screen">
+    <body id="fullpage">
+        <section class="screen-1 slide active" id="screen-2">
             <header class="header">
                 <a class="header__logo" href="#"></a>
                 <div class="header__kebab-menu">
@@ -61,7 +62,15 @@
                     </div>
                 </div>
             </footer>
-        </div>
-        <script src="src/index.js" async></script>
+        </section>
+        <!--<section class="screen-2 slide" id="screen-2"></section>-->
+        <script src="src/index.js"></script>
+        <!-- <script type="text/javascript">
+            let myFullpage = new fullpage('#fullpage', {
+                anchors: ['screen-1', 'screen-2'],
+                autoScrolling:true,
+                scrollHorizontally: true
+            });
+        </script> -->
     </body>
 </html>

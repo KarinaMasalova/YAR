@@ -701,12 +701,19 @@ html {
   line-height: 3rem;
 }
 
-.screen {
+.screen-1 {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/backgrounds/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
+.screen-2 {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/backgrounds/bg.png");
 }
 
 .header {
